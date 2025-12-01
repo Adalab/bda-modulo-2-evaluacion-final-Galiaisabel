@@ -58,6 +58,10 @@ GROUP BY customer.customer_id,customer.first_name, customer.last_name;
 -- Encuentra la cantidad total de películas alquiladas por categoría y muestra el nombre de la categoría junto con el recuento de alquileres.
 
 -- Encuentra el promedio de duración de las películas para cada clasificación de la tabla film y muestra la clasificación junto con el promedio de duración.
+SELECT AVG(length) AS PROMEDIO, rating
+FROM film
+GROUP BY rating;
+
 
 -- Encuentra el nombre y apellido de los actores que aparecen en la película con title "Indian Love".
 select actor.first_name, actor.last_name
